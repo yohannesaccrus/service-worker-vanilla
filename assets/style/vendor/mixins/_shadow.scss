@@ -1,0 +1,13 @@
+@mixin shadow($density) {
+    @if $density == soft {
+        box-shadow: 0 .250em 2.250em 0 rgba($color-black, .125);
+    }
+
+    @if $density == medium {
+        box-shadow: 0 .250em 2.250em 0 rgba($color-black, .200);
+    }
+
+    @if $density == high {
+        box-shadow: 0 0 2.250em 0 rgba($color-black, .300);
+    }
+}

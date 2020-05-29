@@ -1,0 +1,17 @@
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin keymotion($name, $duration, $timing, $fill: forwards, $delay: 0s) {
+    animation: $name $duration $timing $fill $delay;
+}

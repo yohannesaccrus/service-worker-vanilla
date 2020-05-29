@@ -1,0 +1,12 @@
+{
+  "name": "service-test-two",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+	"style": "node-sass assets/style/application/application.scss assets/style/style.css -w"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

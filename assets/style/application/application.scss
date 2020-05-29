@@ -1,0 +1,54 @@
+@import '../vendor/linear.scss';
+
+@import './layouts/navbar';
+
+nav {
+	background-color: salmon;
+	padding: 1.000em 0;
+	@include shadow(soft);
+	.container {
+		.row {
+			.column {
+				.logo {
+					h3 {
+						color: $color-white;
+					}
+				}
+				.menus {
+					display: flex;
+					justify-content: flex-end;
+					li {
+						list-style: none;
+						
+						&:not(:last-child) {
+							margin-right: 1.000em;
+						}
+						a {
+							color: $color-white;
+							padding: .200em .400em;
+							@include transition(all, .5s, ease);
+							@include shape(radius);
+							&:hover {
+								cursor: pointer;
+								color: salmon;
+								background-color: white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+section {
+	.container {
+		padding-top: 2.000em;
+		padding-bottom: 2.000em;
+		p {
+			margin-top: .500em;
+			text-indent: 1.4000em;
+			text-align: justify;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+@mixin shape($type, $parameter: []) {
+    @if $type == radius {
+        border-radius: .350em;
+    }
+
+    @if $type == square {
+        width  : nth($parameter, 1);
+        height : nth($parameter, 1);
+    }
+
+    @if $type == rectangle {
+        width  : nth($parameter, 1);
+        height : nth($parameter, 2);
+    }
+
+    @if $type == circle {
+        @include shape(radius, [ 50% ]);
+        
+        width  : nth($parameter, 1);
+        height : nth($parameter, 1);
+    }
+}

@@ -1,0 +1,19 @@
+/*!
+ * Linear
+ * –––
+ * Copyright © Shopee Integrated Payment Platform
+ * Licensed under the MIT license
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+@import 'core/base';
+@import 'core/colors';
+@import 'core/responsive';
+@import 'core/grid';
+@import 'core/typography';
+
+@import 'mixins/animation';
+@import 'mixins/shadow';
+@import 'mixins/shape';
+@import 'mixins/transition';

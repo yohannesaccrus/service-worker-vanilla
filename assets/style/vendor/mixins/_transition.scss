@@ -1,0 +1,9 @@
+@mixin transition($property, $duration, $timing, $delay: 0s) {
+    transition: $property $duration $timing $delay;
+}
+
+@mixin transform($property, $parameter) {
+    @if $property == 'scale' {
+        transform: scale($parameter);
+    }
+}

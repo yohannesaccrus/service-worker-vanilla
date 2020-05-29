@@ -1,0 +1,234 @@
+.container {
+    padding: 0 10%;
+
+    &[layout=normal] {
+        padding: 0;
+    }
+
+    &[layout=fluid] {
+        padding: 0 3%;
+    }
+
+    .row {
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .column {
+            flex: 1 1 auto;
+            display: block;
+            position: relative;
+            word-wrap: break-word;
+
+            &.large {
+                &\:01 {
+                    width: calc((100% / 12) * 1);
+                    max-width: calc((100% / 12) * 1);
+                }
+
+                &\:02 {
+                    width: calc((100% / 12) * 2);
+                    max-width: calc((100% / 12) * 2);
+                }
+
+                &\:03 {
+                    width: calc((100% / 12) * 3);
+                    max-width: calc((100% / 12) * 3);
+                }
+
+                &\:04 {
+                    width: calc((100% / 12) * 4);
+                    max-width: calc((100% / 12) * 4);
+                }
+
+                &\:05 {
+                    width: calc((100% / 12) * 5);
+                    max-width: calc((100% / 12) * 5);
+                }
+
+                &\:06 {
+                    width: 50%;
+                    max-width: 50%;
+                }
+
+                &\:07 {
+                    width: calc((100% / 12) * 7);
+                    max-width: calc((100% / 12) * 7);
+                }
+
+                &\:08 {
+                    width: calc((100% / 12) * 8);
+                    max-width: calc((100% / 12) * 8);
+                }
+
+                &\:09 {
+                    width: calc((100% / 12) * 9);
+                    max-width: calc((100% / 12) * 9);
+                }
+
+                &\:10 {
+                    width: calc((100% / 12) * 10);
+                    max-width: calc((100% / 12) * 10);
+                }
+
+                &\:11 {
+                    width: calc((100% / 12) * 11);
+                    max-width: calc((100% / 12) * 11);
+                }
+
+                &\:12 {
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@include media(tablet-maximal, down) {
+    .container {
+        .row {
+            .column {
+                &.medium {
+                    &\:01 {
+                        width: calc((100% / 12) * 1);
+                        max-width: calc((100% / 12) * 1);
+                    }
+
+                    &\:02 {
+                        width: calc((100% / 12) * 2);
+                        max-width: calc((100% / 12) * 2);
+                    }
+
+                    &\:03 {
+                        width: calc((100% / 12) * 3);
+                        max-width: calc((100% / 12) * 3);
+                    }
+
+                    &\:04 {
+                        width: calc((100% / 12) * 4);
+                        max-width: calc((100% / 12) * 4);
+                    }
+
+                    &\:05 {
+                        width: calc((100% / 12) * 5);
+                        max-width: calc((100% / 12) * 5);
+                    }
+
+                    &\:06 {
+                        width: 50%;
+                        max-width: 50%;
+                    }
+
+                    &\:07 {
+                        width: calc((100% / 12) * 7);
+                        max-width: calc((100% / 12) * 7);
+                    }
+
+                    &\:08 {
+                        width: calc((100% / 12) * 8);
+                        max-width: calc((100% / 12) * 8);
+                    }
+
+                    &\:09 {
+                        width: calc((100% / 12) * 9);
+                        max-width: calc((100% / 12) * 9);
+                    }
+
+                    &\:10 {
+                        width: calc((100% / 12) * 10);
+                        max-width: calc((100% / 12) * 10);
+                    }
+
+                    &\:11 {
+                        width: calc((100% / 12) * 11);
+                        max-width: calc((100% / 12) * 11);
+                    }
+
+                    &\:12 {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media(phone-maximal, down) {
+    .container {
+        padding: 0 3%;
+
+        &[layout=fluid] {
+            padding: 0 1%;
+        }
+
+        .row {
+            .column {
+                &.small {
+                    &\:01 {
+                        width: calc((100% / 12) * 1);
+                        max-width: calc((100% / 12) * 1);
+                    }
+
+                    &\:02 {
+                        width: calc((100% / 12) * 2);
+                        max-width: calc((100% / 12) * 2);
+                    }
+
+                    &\:03 {
+                        width: calc((100% / 12) * 3);
+                        max-width: calc((100% / 12) * 3);
+                    }
+
+                    &\:04 {
+                        width: calc((100% / 12) * 4);
+                        max-width: calc((100% / 12) * 4);
+                    }
+
+                    &\:05 {
+                        width: calc((100% / 12) * 5);
+                        max-width: calc((100% / 12) * 5);
+                    }
+
+                    &\:06 {
+                        width: 50%;
+                        max-width: 50%;
+                    }
+
+                    &\:07 {
+                        width: calc((100% / 12) * 7);
+                        max-width: calc((100% / 12) * 7);
+                    }
+
+                    &\:08 {
+                        width: calc((100% / 12) * 8);
+                        max-width: calc((100% / 12) * 8);
+                    }
+
+                    &\:09 {
+                        width: calc((100% / 12) * 9);
+                        max-width: calc((100% / 12) * 9);
+                    }
+
+                    &\:10 {
+                        width: calc((100% / 12) * 10);
+                        max-width: calc((100% / 12) * 10);
+                    }
+
+                    &\:11 {
+                        width: calc((100% / 12) * 11);
+                        max-width: calc((100% / 12) * 11);
+                    }
+
+                    &\:12 {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
